@@ -53,10 +53,9 @@ hall_of_fame = tools.HallOfFame(HALL_OF_FAME_SIZE)
 stats = tools.Statistics(lambda ind: ind.fitness.values)
 
 # Register the statistics object
-stats.register('max', numpy.max)
-stats.register('avg', numpy.mean)
 stats.register("min", numpy.min)
 stats.register("max", numpy.max)
+stats.register('avg', numpy.mean)
 
 #==========================[ Algorithm ]==========================#
 
